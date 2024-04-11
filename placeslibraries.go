@@ -1,4 +1,7 @@
 // PlaceDetailsResult is an individual Places API Place Details result
+package main
+
+
 type PlaceDetailsResult struct {
 	// AddressComponents is an array of separate address components used to compose a
 	// given address.
