@@ -15,4 +15,9 @@ func main() {
 	server := api.NewServer(*listenAddr)
 	fmt.Println("server running on port", *listenAddr)
 	log.Fatal(server.Start())
+
+	for _, result := range resp.Results {
+		fmt.Println(result.name, result.FormattedAddress)
+	}
+
 }

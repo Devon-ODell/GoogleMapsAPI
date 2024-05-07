@@ -1,0 +1,4 @@
+zipCode == //////
+## Type ??
+## OpenNow (this should always be set to TRUE)
+## PriceLvl [0, 1, 2] need to be set for [$, $$, $$$]

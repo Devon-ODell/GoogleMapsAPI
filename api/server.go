@@ -9,13 +9,13 @@ import (
 
 type Server struct {
 	listenAddr string
-	store	   storage.Storage
+	store      storage.Storage
 }
 
-func NewServer(listenAddr string, store ) *Server {
+func NewServer(listenAddr string, store store) *Server {
 	return &Server{
 		listenAddr: listenAddr,
-		store:	    store,
+		store:      store,
 	}
 }
 
@@ -29,6 +29,6 @@ func (s *Server) handleGetUserbyID(w http.ResponseWriter, r *http.Request) {
 
 	json.NewEncoder(w).Encode(user)
 
-} 
+}
 
-func ValidateUser(u *User) bool {return true}      
+func ValidateUser(u *User) bool { return true }
